@@ -1,0 +1,17 @@
+# 01-swap.py
+# Topic: Swap without a Third Variable, XOR swap
+
+input("XOR swap - exchange two values without a third variable.   Press ENTER")
+print("  before: a = 5   b = 9")
+a, b = 5, 9
+a-a^b
+b=a^b
+a=a^b
+print("  after:  a=", a, "  b =", b)
+
+n = int(input("Enter a number (try 3 or 7): "))
+guess = input("After XOR swap of ", + str(n) + " and 8 what does n become? ")
+a, b = n, 8
+a ^= b; b ^= a; a ^= b
+input("XOR swap exchanges the values.   Press ENTER")
+print("  n became:", a, "  your guesses:", guess)
